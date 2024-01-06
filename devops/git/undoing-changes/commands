@@ -1,0 +1,18 @@
+General commands for undoing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git checkout [file]
+git reset [file]
+git revert [commitID]
+git rm
+
+
+TRACKING PATH CHANGES
+~~~~~~~~~~~~~~~~~~~~~
+git rm [file]     (delete the file from the project and stage the removal for commit)
+git mv [current-path] [new-path]   (change current file path and stage the move)
+
+TEMPORARY COMMITS
+~~~~~~~~~~~~~~~~~
+git stash  (move files from staginng to a temporary location)
+git stash list  (list all stash files)
+git stash pop  (write working from top if stash)

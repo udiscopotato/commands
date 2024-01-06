@@ -1,0 +1,11 @@
+LINUX FILE MANAGEMENT
+~~~~~~~~~~~~~~~~~~~~~
+pwd 
+mkdir
+rmdir
+touch
+rm
+cd
+cp [current-location] [destination] (copy current file to destination)
+mv [current-location] [destination]  (move current file to destination)
+mv [old-name] [new-name]  (rename a file)

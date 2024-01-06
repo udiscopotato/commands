@@ -1,0 +1,76 @@
+INITIALIZATION
+~~~~~~~~~~~~~~
+git init   (initialize an empty repository in existing directory)
+git clone [url]  (retrive repository from cloud)
+
+
+
+CONFIGURATION
+~~~~~~~~~~~~~
+git config user.name "[name]"   (configure the author name for the project)
+git config user.email "[mail]"   (configure the author mail)
+git config --global user.name/user.email "[data]"   (configure author details for all git projects)
+
+
+
+STAGE & SNAPSHOT
+~~~~~~~~~~~~~~~~
+git add [file]  (add a file to staging area)
+	FLAGS
+	~~~~~
+	-A   (all files)
+	-all  (all files)
+	.    (all files)
+	*.ext	(all files)
+git diff   (it shows what's changed but not stagged with differences)
+git diff --staged  (what's staged but not commited)
+git status  (shows tracked, untracked, modified files and their respective stages)
+git commit -m "[message]"  (move stagged contents to commit area and takes snapshot)
+git commit -am "[message]"  (commit without adding N.B. only modified files will be accepted)
+
+
+
+UPLOAD & DOWNLOAD
+~~~~~~~~~~~~~~~~~
+git remote add [alias] [url]  (add a remote git url as alias)
+git push origin [branch]  (upload commits to remote repository and specific branch)
+git fetch origin   (fetch all the branches from git remote to local if you have the permissions)
+git pull  (fetch and merge from remote)
+
+
+
+
+BRANCH & MERGE
+~~~~~~~~~~~~~~
+git branch     (show all branches present)
+git branch [branchname]    (create a new branch)
+git checkout [branchname]    (switch to another branch)
+git switch [branch-name]   (switch to another branch)
+git checkout -b [branch-name]   (create and switch to a new branch)
+git merge [branch-name]     (merge the branch to current branch)
+git merge origin/[branch]   (merge a remote branch to local current branch)
+git branch -d [branch]   (delete a branch)
+git push origin -d [branch]   (delete a branch from remote repo)
+git branch -D [branch]  (delete a branch if commits done and not merged)
+git cherry-pick [commitID]   (get changes of specific commit of another branch to current branch     N/B all files need to present onn both branch)
+git rebase [branch]     (merge a 3-way without a new commit)
+
+
+
+
+INSPECT AND COMPARE
+~~~~~~~~~~~~~~~~~~~
+git log   (show the commit histroy of current branch)
+	FLAGS
+	~~~~~
+	--oneline  (show logs in oneline)
+	-number	  (show last specific numbers of logs)
+	--since=[date]	  
+	--after=[date]
+	--author=[author]
+	--merges
+	--no-merges
+	[file-name]
+git log [branchB] [branchaA]   (show the commits on branchA that are not on branchB)
+git diff [branchB] [branchA]   (show the difference of what in branchA not in branchB)
+
