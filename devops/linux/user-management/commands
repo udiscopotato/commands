@@ -1,0 +1,22 @@
+User Management Commands
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- su (substitute user) (by default it switches to root user if no username is mentioned)
+- su [username] (switch to perticular user)
+- useradd [username] (create user with specific username)
+- useradd -m -c "Comment" -G [group name] [username]  (create user with comment, home dir, and in group)
+- passwd [username]  (create or modify password for user)
+- userdel [username]  (delete a user)
+- usermod -a -G [group name] [user name] (add a user to a group)
+- groupadd [group name] (create a group)
+- groupdel [group name]  (delete a group)
+- gpasswd [group name]  (create or modify password for group)
+- gpasswd -d [username] [group name]   (remove a user from group)
+
+
+
+
+we can access all users at - /etc/passwd
+we can access all groups at - /etc/group
+we can access all passwords at - /etc/shadow (encrypted)
+
